@@ -1,9 +1,9 @@
 ---
 toc: true
 layout: post
-description: A minimal example of using markdown with fastpages.
-categories: [markdown]
-title: An Example Markdown Post
+description: A journal of my journey in the realms of the software industry.
+categories: [testing, development, movement, role-switch, personal]
+title: How I moved to being a developer from a tester...
 ---
 
 Hi, let me introduce myself first. I am Moniseeta - a “Software Developer” in one of the leading cloud native security providers. 
