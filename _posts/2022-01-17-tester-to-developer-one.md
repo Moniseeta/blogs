@@ -4,6 +4,7 @@ layout: post
 description: A journal of my journey in the realms of the software industry.
 categories: [testing, development, movement, role-switch, personal]
 title: How I moved to being a developer from a tester...
+image: images/super_coder.jpg
 ---
 
 Hi, let me introduce myself first. I am Moniseeta - a “Software Developer” in one of the leading cloud native security providers. (Which one? I will reveal but not yet :innocent:)
