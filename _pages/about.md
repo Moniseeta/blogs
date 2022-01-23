@@ -6,7 +6,7 @@ permalink: /about/
 
 Hi I am **Moniseeta Roy Gosthipaty**. :wave:
 
-I work as a software developer specializing in [Go](https://go.dev/). :beaver: The last 8 years of donning the hat :tophat: of a software professional drifted me away from my ink pot and quill ✒️. 
+I work as a software developer specializing in [Go](https://go.dev/). The last 8 years of donning the hat :tophat: of a software professional drifted me away from my ink pot and quill ✒️. 
 
 So I decided to make use of both the worlds - and pour my creativity technically 🪄- forego the notepad and create some blog posts - talking about many things that I learn 👩‍💻 with a pinch of my emotions. 🧂
 
