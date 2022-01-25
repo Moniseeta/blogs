@@ -22,11 +22,11 @@ I, in no way want to demean the role, and slowly you will realize how much my pr
 In large MNCs - there is mostly no process of determining who should be tagged :link: to which technology. In a batch of 1000 students :busts_in_silhouette: - no one has the time to judge your capabilities - and my fate landed me in a batch of Manual Testing. Initially people kept saying - this is great, it means quick onsite opportunities :airplane:- I really did not know what the role was and was thrilled at this suggestion. 
 As soon as the training unfolded - I realized I did not want onsite at the cost of “no coding”. Terms like “automation”, “white/black/gray box” were aboslutely new - and I knew all I had to work with was "Decoding requirements and wording tests". I started slipping into hopelessness by the day. 
 
-
+![]({{ site.baseurl }}/images/black-white-gray.png "Source credit: https://www.ranorex.com/black-box-testing-tools/")
 
 Guidance matters - and I had none. No one told me that it was okay to look for another job right then - so I continued. I kept on working at writing test cases in excel sheets, manually executing them, learning the domain and the most important of all - understanding requirements. Whenever there was an opportunity - I did not forget to highlight my aspirations - I knew movement to development was almost not possible but the closest I could move to code was being an “Automation Engineer”. 
 
-![]({{ site.baseurl }}/images/black-white-gray.png "Source credit: https://www.ranorex.com/black-box-testing-tools/")
+![]({{ site.baseurl }}/images/manual-vs-Automation-Testing.png "Source credit: https://www.agileinfoways.com/blog/pros-and-cons-of-manual-testing-vs-automation-testing-tools-what-to-choose-and-why/")
 
 And I took up every opportunity of building something in-house - failing at almost every task - because I had _No Guidance_. I did not know what frameworks were, I did not know how to develop websites - it all looked so dreamy, magical and out of reach :sob:. When I was told to contribute in an Android :iphone: application that was being built in-house - I could not understand anything:dizzy_face: in the 2 days provided to learn, and faltered to deliver. I kept losing faith in myself - but today when I look back, the only thing that is visible is - **the scenario was bound to fail**. I cannot expect myself to create a production ready UX design in just 2 days of learning android development. And it is Okay. :purple_heart: Many times we fail some tests because the tests are wrong - you cannot expect a baby bird to fly in a day. :hatching_chick: 
 
