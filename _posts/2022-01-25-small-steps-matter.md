@@ -2,7 +2,7 @@
 toc: true
 layout: post
 description: A journal of my journey in the realms of the software industry.
-categories: [testing, development, movement, role-switch, personal]
+categories: [testing, development, automation, movement, role-switch, personal]
 title: Small steps matter
 image: images/super_coder.jpg
 ---
@@ -13,7 +13,7 @@ Hello 👋🏼 - I am back. I hope you have already read the prelude here 👇�
 
 If you haven’t - well just go on reading this post - I am glad you are here and would respect your time - so no need to go back and read right now 🙆🏻‍♀️ 
 
-So - where was I .. Ah yes ! how a QA engineer (tester)🔍🐞 with more than half a decade of experience moved to being a developer 👩🏻‍💻. Well, honestly - when I started as a manual tester - from day 1 (or probably the day I understood what my job requires) - I started requesting for a role change. 
+So - where was I .. Ah yes! How a QA engineer (tester)🔍🐞 with more than half a decade of experience moved to being a developer 👩🏻‍💻. Well, honestly - when I started as a manual tester - from day 1 (or probably the day I understood what my job requires) - I started requesting for a role change. 
 
 I, in no way want to demean the role, and slowly you will realize how much my previous role helps my current one. Only - I love absolute honesty and that is how I will present myself - my exact thoughts at each stage, my decisions, what I missed and what I grabbed. 
 
@@ -35,4 +35,4 @@ But I proved my mettle wherever possible. I never backed out on any added respon
 
 So as soon as my current project ended - after a long tenure (at least for me) of 1 year - I was presented with the role of an Automation engineer in another project.
 
-What happened next you say? Stay tuned for the next chapter next week.. Till then.. Okka Bye 👩🏻‍💻
+What happened next you say? Stay tuned for the next chapter the upcoming week.. Till then.. Okka Bye 👩🏻‍💻
