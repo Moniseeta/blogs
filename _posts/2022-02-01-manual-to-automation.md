@@ -39,7 +39,7 @@ Hey stop..✋ don’t think I am trying to cut a sorry picture. Let me now go ba
     It is not just me, various posts on different platforms do mention “being able to Google” as a sought after skill - because trust me - no one knows it all - you just need to know what to look for. 😉💡
     
 3. Teaching. 👩🏻‍🏫 I learnt with total honesty- because I knew that I could not impart incorrect information.
-4. Investigative attitude 🕵🏼 . A question I did not have 
+4. Investigative attitude 🕵🏼 . A question I did not have an answer to made me all the more curious. This helped me later in many "root cause analysis".
 5. Absolute honest efforts. This helped me gain a long term foothold on subjects I worked in.
 6. Observe 👀, analyze, learn, repeat 🔃
 
