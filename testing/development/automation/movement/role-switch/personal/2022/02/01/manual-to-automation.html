@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Manual to Automation | moniseeta’s journal</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="Manual to Automation" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="A journal of my journey in the realms of the software industry." />
+<meta property="og:description" content="A journal of my journey in the realms of the software industry." />
+<link rel="canonical" href="https://moniseeta.github.io/blogs/testing/development/automation/movement/role-switch/personal/2022/02/01/manual-to-automation.html" />
+<meta property="og:url" content="https://moniseeta.github.io/blogs/testing/development/automation/movement/role-switch/personal/2022/02/01/manual-to-automation.html" />
+<meta property="og:site_name" content="moniseeta’s journal" />
+<meta property="og:image" content="https://moniseeta.github.io/blogs/images/super_coder.jpg" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2022-02-01T00:00:00-06:00" />
+<script type="application/ld+json">
+{"url":"https://moniseeta.github.io/blogs/testing/development/automation/movement/role-switch/personal/2022/02/01/manual-to-automation.html","@type":"BlogPosting","headline":"Manual to Automation","dateModified":"2022-02-01T00:00:00-06:00","datePublished":"2022-02-01T00:00:00-06:00","image":"https://moniseeta.github.io/blogs/images/super_coder.jpg","mainEntityOfPage":{"@type":"WebPage","@id":"https://moniseeta.github.io/blogs/testing/development/automation/movement/role-switch/personal/2022/02/01/manual-to-automation.html"},"description":"A journal of my journey in the realms of the software industry.","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/blogs/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://moniseeta.github.io/blogs/feed.xml" title="moniseeta's journal" /><link rel="shortcut icon" type="image/x-icon" href="/blogs/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+
+<script>
+function wrap_img(fn) {
+    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+        var elements = document.querySelectorAll(".post img");
+        Array.prototype.forEach.call(elements, function(el, i) {
+            if (el.getAttribute("title") && (el.className != "emoji")) {
+                const caption = document.createElement('figcaption');
+                var node = document.createTextNode(el.getAttribute("title"));
+                caption.appendChild(node);
+                const wrapper = document.createElement('figure');
+                wrapper.className = 'image';
+                el.parentNode.insertBefore(wrapper, el);
+                el.parentNode.removeChild(el);
+                wrapper.appendChild(el);
+                wrapper.appendChild(caption);
+            }
+        });
+    } else { document.addEventListener('DOMContentLoaded', fn); }
+}
+window.onload = wrap_img;
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+    // add link icon to anchor tags
+    var elem = document.querySelectorAll(".anchor-link")
+    elem.forEach(e => (e.innerHTML = '<i class="fas fa-link fa-xs"></i>'));
+    });
+</script>
+</head>
+<body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/blogs/">moniseeta&#39;s journal</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/blogs/about/">About Me</a><a class="page-link" href="/blogs/search/">Search</a><a class="page-link" href="/blogs/categories/">Tags</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Manual to Automation</h1><p class="page-description">A journal of my journey in the realms of the software industry.</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2022-02-01T00:00:00-06:00" itemprop="datePublished">
+        Feb 1, 2022
+      </time>
+       • <span class="read-time" title="Estimated read time">
+    
+    
+      4 min read
+    
+</span></p>
+
+    
+      <p class="category-tags"><i class="fas fa-tags category-tags-icon"></i></i> 
+      
+        <a class="category-tags-link" href="/blogs/categories/#testing">testing</a>
+        &nbsp;
+      
+        <a class="category-tags-link" href="/blogs/categories/#development">development</a>
+        &nbsp;
+      
+        <a class="category-tags-link" href="/blogs/categories/#automation">automation</a>
+        &nbsp;
+      
+        <a class="category-tags-link" href="/blogs/categories/#movement">movement</a>
+        &nbsp;
+      
+        <a class="category-tags-link" href="/blogs/categories/#role-switch">role-switch</a>
+        &nbsp;
+      
+        <a class="category-tags-link" href="/blogs/categories/#personal">personal</a>
+        
+      
+      </p>
+    
+
+    </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <ul class="section-nav">
+</ul><p>Hello Readers 👋🏼 So glad that you are here.</p>
+
+<p>Recap 📜 : I am a software developer now, after 7 years of being a QA engineer. The original journey was that of a Manual Tester → Automation Maintenance Engineer (I know that is not even a term but you will soon relate to it) → Automation Engineer → Software Developer. In the last 2 posts, I began telling you the story of how it all began and how I managed to get noticed as capable of being an automation engineer.</p>
+
+<p><img src="/blogs/images/1st_step.jpeg" alt="" title="Source credit: http://www.thechangefactor.com/uploads/1/1/2/5/112574637/first-step_orig.jpg"></p>
+
+<p>So, once my first project ended, the entire team was split up and absorbed into different projects.</p>
+
+<p>I was to fill in the shoes 👠of one stalwart automation engineer. I still remember my first introduction to Selenium 🤖- I was handed an excel file with some existing test cases, some keywords, data, test steps - and a 30 minutes of “How to run”. I did not ask 😓- what is Selenium, where is it being used, how does it work - nothing. I came back to my desk, and worked on the setup - triggered a test case which ran all green 🟢.</p>
+
+<p><img src="/blogs/images/selenium.png" alt="" title="Source credit: 3fxtqy18kygf3on3bu39kh93-wpengine.netdna-ssl.com/wp-content/uploads/2020/03/Remote-Webdriver-Implementation.png"></p>
+
+<p>There were instances in future where I was asked to provide “KT or Knowledge Transfer” sessions 👩‍🏫 on Selenium - and I always feared of teaching it wrong, of not knowing an answer 😟.</p>
+
+<p>Hey stop..✋ don’t think I am trying to cut a sorry picture. Let me now go back and share the analysis of what I did wrong and how I made/could have made it right.</p>
+
+<p><img src="/blogs/images/analyze.jpg" alt="" title="Source credit: callminer.com/blog/importance-analyzing-customer-conversations-speech-analytics-resource-guide"></p>
+
+<p><strong>Wrong</strong>:</p>
+
+<ol>
+  <li>Not asking- be it a question, assistance or guidance.</li>
+  <li>Being a perfectionist - no mistakes allowed. ❌</li>
+</ol>
+
+<p><strong>Right</strong>:</p>
+
+<ol>
+  <li>Ensuring delivery - this is the key 🗝️ in building trust 🤝 and being valued.</li>
+  <li>
+    <p>Improved “Google Search”. 🔍 (Well yes it can be any search, but Google is what I used and still do use 😅)</p>
+
+    <p>It is not just me, various posts on different platforms do mention “being able to Google” as a sought after skill - because trust me - no one knows it all - you just need to know what to look for. 😉💡</p>
+  </li>
+  <li>Teaching. 👩🏻‍🏫 I learnt with total honesty- because I knew that I could not impart incorrect information.</li>
+  <li>Investigative attitude 🕵🏼 . A question I did not have</li>
+  <li>Absolute honest efforts. This helped me gain a long term foothold on subjects I worked in.</li>
+  <li>Observe 👀, analyze, learn, repeat 🔃</li>
+</ol>
+
+<p><strong>What could have been done differently</strong>:</p>
+
+<ol>
+  <li>Ask. Questions, requests for sessions, documentation - anything that you might need to gear up - go ahead and ask for it. It helps in 2 main ways :
+    <ol>
+      <li>You are ready to deliver much faster 🚀- team is benefited</li>
+      <li>You make less ignorant mistakes 🤦🏽‍♀️ 📉.</li>
+    </ol>
+
+    <p>⚠️ Some terms and conditions applied to the above ⚠️</p>
+
+    <p>** There is a thin line between “spoon feeding” 🥣 and “requesting for help when required” 🆘. Ensure that you have tried everything you could, before approaching someone. Respect everyone’s time.</p>
+
+    <p>** Have specific and constructive asks - Instead of “I need a session on Selenium”, a better question is “How is <some concept=""> of Selenium implemented in the current project?”</some></p>
+  </li>
+  <li>I know I am still not there yet - but try to overcome the “self- doubt”. You know you will be able to prove yourself - just not yet - but soon. 🍀</li>
+  <li>Spend time on learning ✏️🗓️- it is the most difficult thing. And don’t make it a “resolution”. <strong>Breaking a “resolution” makes us lose the battle half way - so learn whenever you can and you feel like.</strong> There is so much knowledge and such little time - it is very easy to get derailed. No one-shot formula of learning that works for all - I can only share what works for me. I can only motivate myself to learn things that need me to get a job done. So I always try to learn things while working on them - being curious and asking more “whys”. 🤔</li>
+</ol>
+
+<p>Well,well - A lot of “preaching” 😄 But now a question for you .. Did you observe any pattern in “what I did wrong”? You have 1 week to think.. Till then.. Keep dreaming..</p>
+
+<p>Psst.. What is “Automation Maintenance Engineer”? Stay tuned for next blog 😜</p>
+
+<p>Okka bye 👋🏼 👩🏻‍💻</p>
+
+  </div><a class="u-url" href="/blogs/testing/development/automation/movement/role-switch/personal/2022/02/01/manual-to-automation.html" hidden></a>
+</article>
+      </div>
+    </main><footer class="site-footer h-card">
+    <data class="u-url" href="/blogs/"></data>
+  
+    <div class="wrapper">
+  
+      <div class="footer-col-wrapper">
+        <div class="footer-col">
+          
+        </div>
+        <div class="footer-col">
+          <p>Some excerpts from my professional life and learnings.</p>
+        </div>
+      </div>
+  
+      <div class="social-links"><ul class="social-media-list"><li><a rel="me" href="https://github.com/Moniseeta" target="_blank" title="Moniseeta"><svg class="svg-icon grey"><use xlink:href="/blogs/assets/minima-social-icons.svg#github"></use></svg></a></li><li><a rel="me" href="https://twitter.com/moniseeta" target="_blank" title="moniseeta"><svg class="svg-icon grey"><use xlink:href="/blogs/assets/minima-social-icons.svg#twitter"></use></svg></a></li></ul>
+</div>
+  
+    </div>
+  
+  </footer></body>
+
+</html>
