@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>The Big Change | moniseeta’s journal</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="The Big Change" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="A journal of my journey in the realms of the software industry." />
+<meta property="og:description" content="A journal of my journey in the realms of the software industry." />
+<link rel="canonical" href="https://moniseeta.github.io/blogs/testing/development/automation/movement/role-switch/personal/pytest/docker/rspec/watir/2022/02/15/the-big-change.html" />
+<meta property="og:url" content="https://moniseeta.github.io/blogs/testing/development/automation/movement/role-switch/personal/pytest/docker/rspec/watir/2022/02/15/the-big-change.html" />
+<meta property="og:site_name" content="moniseeta’s journal" />
+<meta property="og:image" content="https://moniseeta.github.io/blogs/images/super_coder.jpg" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2022-02-15T00:00:00-06:00" />
+<script type="application/ld+json">
+{"url":"https://moniseeta.github.io/blogs/testing/development/automation/movement/role-switch/personal/pytest/docker/rspec/watir/2022/02/15/the-big-change.html","@type":"BlogPosting","headline":"The Big Change","dateModified":"2022-02-15T00:00:00-06:00","datePublished":"2022-02-15T00:00:00-06:00","image":"https://moniseeta.github.io/blogs/images/super_coder.jpg","mainEntityOfPage":{"@type":"WebPage","@id":"https://moniseeta.github.io/blogs/testing/development/automation/movement/role-switch/personal/pytest/docker/rspec/watir/2022/02/15/the-big-change.html"},"description":"A journal of my journey in the realms of the software industry.","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/blogs/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://moniseeta.github.io/blogs/feed.xml" title="moniseeta's journal" /><link rel="shortcut icon" type="image/x-icon" href="/blogs/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+
+<script>
+function wrap_img(fn) {
+    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+        var elements = document.querySelectorAll(".post img");
+        Array.prototype.forEach.call(elements, function(el, i) {
+            if (el.getAttribute("title") && (el.className != "emoji")) {
+                const caption = document.createElement('figcaption');
+                var node = document.createTextNode(el.getAttribute("title"));
+                caption.appendChild(node);
+                const wrapper = document.createElement('figure');
+                wrapper.className = 'image';
+                el.parentNode.insertBefore(wrapper, el);
+                el.parentNode.removeChild(el);
+                wrapper.appendChild(el);
+                wrapper.appendChild(caption);
+            }
+        });
+    } else { document.addEventListener('DOMContentLoaded', fn); }
+}
+window.onload = wrap_img;
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+    // add link icon to anchor tags
+    var elem = document.querySelectorAll(".anchor-link")
+    elem.forEach(e => (e.innerHTML = '<i class="fas fa-link fa-xs"></i>'));
+    });
+</script>
+</head>
+<body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/blogs/">moniseeta&#39;s journal</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/blogs/about/">About Me</a><a class="page-link" href="/blogs/search/">Search</a><a class="page-link" href="/blogs/categories/">Tags</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">The Big Change</h1><p class="page-description">A journal of my journey in the realms of the software industry.</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2022-02-15T00:00:00-06:00" itemprop="datePublished">
+        Feb 15, 2022
+      </time>
+       • <span class="read-time" title="Estimated read time">
+    
+    
+      7 min read
+    
+</span></p>
+
+    
+      <p class="category-tags"><i class="fas fa-tags category-tags-icon"></i></i> 
+      
+        <a class="category-tags-link" href="/blogs/categories/#testing">testing</a>
+        &nbsp;
+      
+        <a class="category-tags-link" href="/blogs/categories/#development">development</a>
+        &nbsp;
+      
+        <a class="category-tags-link" href="/blogs/categories/#automation">automation</a>
+        &nbsp;
+      
+        <a class="category-tags-link" href="/blogs/categories/#movement">movement</a>
+        &nbsp;
+      
+        <a class="category-tags-link" href="/blogs/categories/#role-switch">role-switch</a>
+        &nbsp;
+      
+        <a class="category-tags-link" href="/blogs/categories/#personal">personal</a>
+        &nbsp;
+      
+        <a class="category-tags-link" href="/blogs/categories/#pytest">pytest</a>
+        &nbsp;
+      
+        <a class="category-tags-link" href="/blogs/categories/#docker">docker</a>
+        &nbsp;
+      
+        <a class="category-tags-link" href="/blogs/categories/#rspec">rspec</a>
+        &nbsp;
+      
+        <a class="category-tags-link" href="/blogs/categories/#watir">watir</a>
+        
+      
+      </p>
+    
+
+    </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <ul class="section-nav">
+</ul><p>👋🏼 Welcome to the pre-finale of this series.</p>
+
+<p>Moving from being a Tester to a Developer was neither an easy path, nor a quick jump. It was years of experience, information and a deep rooted passion that brought me here.</p>
+
+<p>In the last blog, I told you why I was stuck being in a confused state - about what I really wanted. 🤲🏼</p>
+
+<p>Now, for all of us, the heart and mind are not always in sync. 🙂 My heart always knew what it wanted, but my mind was realizing the reality - that time was running out. ⌛ So, I had to polish my skills, I had to be a Good Automation Tester. Well, not that I was bad, but I knew there was room for improvement - to be at par with the market. And I constantly started looking for opportunities to learn more.</p>
+
+<p>Again a project ending - again a new project; and this New Project was a “Jet Pack” 🚀. My Lead cum Manager from my last project was helming a new customer - it was a pure automation project on which we had to start from scratch. She pulled me in - yes both of us were the only members of the QA offshore team. Somehow, she believed in me - though I was scared out of sleep with the responsibility that was being given to me. 😨</p>
+
+<p>Our clients wanted specific problems to be handled - and for that our internal Automation Expert team suggested an in-house custom framework - which is also widely used by different companies for their automation. The framework is extremely scalable, supports a lot of browsers, CICD and what not. But for me, to start with - I had no idea about Page Object Models, Maven, TestNG, Cucumber (Behaviour Driven Development), etc. - and this framework used it all. So, I had to learn all of it as soon as I could - because I was answerable to any question that our client might have - whether our framework could or could not solve everything that they were looking for. Thus, with just an hour of session on how the framework works - I started.</p>
+
+<p><img src="/blogs/images/bdd.jpg" alt="" title="Source credit: www.gcreddy.com/2019/07/selenium-integration-with-cucumber.html"></p>
+
+<p>It was not easy - I always feared of doing things wrong. But I was adamant to never show it - adamant to grab this opportunity to learn. Soon enough, I got the control I needed, and in 4 months - I had written more code in Selenium, worked on <code class="language-plaintext highlighter-rouge">Pom.xml</code>, understood and used TestNG; than I ever had in the past 4 years. 💪🏼</p>
+
+<p>Yet, this was not the biggest challenge. After the first phase of delivery, our client was happy with what we did but - they wanted us to move to Ruby with RSpec and Watir. [^1] Why? Because their own automation team was using it, and they felt more comfortable. They shared with us the framework that they used - so we had to buckle up and start delivering. By then, a few more members had joined in our team - and honestly - all of them were the best kind of people you could work with. But none of us had any experience of working with Ruby. I had Java in my college, and had just written “hello world” in Python.</p>
+
+<p><img src="/blogs/images/java-ruby.png" alt="" title="Source credit: www.bacancytechnology.com"></p>
+
+<p>I will not go into the details of how we got it to work - but the learning was a steep curve. 📈 Not only did I learn Ruby, but also a lot in Jenkins while trying to build the jobs to run our tests. Watir was not easy either - since it is not as widely used. None of the existing projects were using these, we were devoid of Ruby expertise and small issues took quite long to resolve.</p>
+
+<p>I think this made me so strong - I gained the confidence to update my resume and give it a shot.</p>
+
+<p>Few things to mention here:</p>
+
+<ol>
+  <li>It was not that I was not looking for a switch already. I had created a profile in many sites - with no response.</li>
+  <li>One of my best friends who was also in my “Manual Testing” training batch - had switched to another company (foregoing the lure of “Onsite” opportunity). And there - he was lucky to be in a project that saw the mettle in him and he transitioned to be a full stack developer. He was (still is) an inspiration to me.</li>
+  <li>A colleague had once mentioned that “start-ups” are the best places for mobility - role changes are much more heard of and supported. Even one of my supervisors had once told me - “If you are looking for transitioning to development, it is difficult here. We are not start ups, so the process is complicated”.</li>
+</ol>
+
+<p>I had seen many many people move from development to testing. I never understood why the opposite transition could be so complicated !! Is it because of some prejudice about the technical hold of a QA Engineer? I still do not have an answer to it - but yes, I do have an answer for it - <strong>any one can be anything if they put there heart into it</strong>.</p>
+
+<p>So - one fine evening in 2019, I got a call. It was from the HR of <a href="http://www.aquasec.com">AquaSecurity</a>. Well, honestly - initially I could not make out the name of the company (I was applying vigorously to multiple positions in different companies back then), because it was not one of the commonly heard of names. She told me - “Moniseeta, we have received your application on LinkedIn and would like to schedule an interview with you. But before that - I would like you to know that we are a start up, so the work here will be difficult, might require more time. Plus, the skill-sets that we are looking for do not actually match with yours, so you might need to put in extra effort to prepare before your interviews. Are you okay with it?”. I had the answer at the tip of my tongue - “Yesss!”</p>
+
+<p>The next was a series of interviews - I really tried a lot to learn Python 🐍 and Docker 🐋 and what not, brush up on Selenium, OOPs (object oriented programming concepts), Java - all of this in a few days. There was the first round of writing a test suite with python and pytest and I did that in one night. I learnt it enough to be able to submit the code. Then the interviews, first one was a mess but my interviewer decided to take a chance with me. Second one onward, I performed better. Every time I was told that there would be another round, I would freak. But finally - I made it.✌️ I knew how much I wanted to be in Aqua. Because I could not get a better place to skyrocket my learning.</p>
+
+<p><img src="/blogs/images/docker.png" alt="" title="Source credit: https://www.aquasec.com/cloud-native-academy/docker-container/"></p>
+
+<p>Finally, the day I got the offer letter, I was elated. I put down my papers, and then some weird things happened. In the exit interview, I had mentioned my reason of moving out to be “technical stagnancy” - because indeed my main motive was to upgrade myself. The HR conveyed the same to my senior manager, and he decided to talk to me personally. I told him my concerns, why I had made this decision. And he offered me something that I had never ever imagined - the option to move to development. 😲</p>
+
+<p>What happened next? Stay tuned for the final blog - coming next Tuesday. Okka Bye.. 👩🏻‍💻👋🏼</p>
+
+<p>[^1] : Some resources to learn about the technologies/frameworks in this post:</p>
+
+<ol>
+  <li>Selenium vs Watir : https://dzone.com/articles/selenium-vs-watir</li>
+  <li>Cucumber vs RSpec : https://knapsackpro.com/testing_frameworks/difference_between/rspec/vs/cucumber</li>
+  <li>Python Pytest : https://realpython.com/pytest-python-testing/</li>
+</ol>
+
+  </div><a class="u-url" href="/blogs/testing/development/automation/movement/role-switch/personal/pytest/docker/rspec/watir/2022/02/15/the-big-change.html" hidden></a>
+</article>
+      </div>
+    </main><footer class="site-footer h-card">
+    <data class="u-url" href="/blogs/"></data>
+  
+    <div class="wrapper">
+  
+      <div class="footer-col-wrapper">
+        <div class="footer-col">
+          
+        </div>
+        <div class="footer-col">
+          <p>Some excerpts from my professional life and learnings.</p>
+        </div>
+      </div>
+  
+      <div class="social-links"><ul class="social-media-list"><li><a rel="me" href="https://github.com/Moniseeta" target="_blank" title="Moniseeta"><svg class="svg-icon grey"><use xlink:href="/blogs/assets/minima-social-icons.svg#github"></use></svg></a></li><li><a rel="me" href="https://twitter.com/moniseeta" target="_blank" title="moniseeta"><svg class="svg-icon grey"><use xlink:href="/blogs/assets/minima-social-icons.svg#twitter"></use></svg></a></li></ul>
+</div>
+  
+    </div>
+  
+  </footer></body>
+
+</html>
