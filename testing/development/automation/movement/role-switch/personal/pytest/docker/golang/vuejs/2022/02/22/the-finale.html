@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>The Finale | moniseeta’s journal</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="The Finale" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="A journal of my journey in the realms of the software industry." />
+<meta property="og:description" content="A journal of my journey in the realms of the software industry." />
+<link rel="canonical" href="https://moniseeta.github.io/blogs/testing/development/automation/movement/role-switch/personal/pytest/docker/golang/vuejs/2022/02/22/the-finale.html" />
+<meta property="og:url" content="https://moniseeta.github.io/blogs/testing/development/automation/movement/role-switch/personal/pytest/docker/golang/vuejs/2022/02/22/the-finale.html" />
+<meta property="og:site_name" content="moniseeta’s journal" />
+<meta property="og:image" content="https://moniseeta.github.io/blogs/images/super_coder.jpg" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2022-02-22T00:00:00-06:00" />
+<script type="application/ld+json">
+{"url":"https://moniseeta.github.io/blogs/testing/development/automation/movement/role-switch/personal/pytest/docker/golang/vuejs/2022/02/22/the-finale.html","@type":"BlogPosting","headline":"The Finale","dateModified":"2022-02-22T00:00:00-06:00","datePublished":"2022-02-22T00:00:00-06:00","image":"https://moniseeta.github.io/blogs/images/super_coder.jpg","mainEntityOfPage":{"@type":"WebPage","@id":"https://moniseeta.github.io/blogs/testing/development/automation/movement/role-switch/personal/pytest/docker/golang/vuejs/2022/02/22/the-finale.html"},"description":"A journal of my journey in the realms of the software industry.","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/blogs/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://moniseeta.github.io/blogs/feed.xml" title="moniseeta's journal" /><link rel="shortcut icon" type="image/x-icon" href="/blogs/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+
+<script>
+function wrap_img(fn) {
+    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+        var elements = document.querySelectorAll(".post img");
+        Array.prototype.forEach.call(elements, function(el, i) {
+            if (el.getAttribute("title") && (el.className != "emoji")) {
+                const caption = document.createElement('figcaption');
+                var node = document.createTextNode(el.getAttribute("title"));
+                caption.appendChild(node);
+                const wrapper = document.createElement('figure');
+                wrapper.className = 'image';
+                el.parentNode.insertBefore(wrapper, el);
+                el.parentNode.removeChild(el);
+                wrapper.appendChild(el);
+                wrapper.appendChild(caption);
+            }
+        });
+    } else { document.addEventListener('DOMContentLoaded', fn); }
+}
+window.onload = wrap_img;
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+    // add link icon to anchor tags
+    var elem = document.querySelectorAll(".anchor-link")
+    elem.forEach(e => (e.innerHTML = '<i class="fas fa-link fa-xs"></i>'));
+    });
+</script>
+</head>
+<body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/blogs/">moniseeta&#39;s journal</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/blogs/about/">About Me</a><a class="page-link" href="/blogs/search/">Search</a><a class="page-link" href="/blogs/categories/">Tags</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">The Finale</h1><p class="page-description">A journal of my journey in the realms of the software industry.</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2022-02-22T00:00:00-06:00" itemprop="datePublished">
+        Feb 22, 2022
+      </time>
+       • <span class="read-time" title="Estimated read time">
+    
+    
+      6 min read
+    
+</span></p>
+
+    
+      <p class="category-tags"><i class="fas fa-tags category-tags-icon"></i></i> 
+      
+        <a class="category-tags-link" href="/blogs/categories/#testing">testing</a>
+        &nbsp;
+      
+        <a class="category-tags-link" href="/blogs/categories/#development">development</a>
+        &nbsp;
+      
+        <a class="category-tags-link" href="/blogs/categories/#automation">automation</a>
+        &nbsp;
+      
+        <a class="category-tags-link" href="/blogs/categories/#movement">movement</a>
+        &nbsp;
+      
+        <a class="category-tags-link" href="/blogs/categories/#role-switch">role-switch</a>
+        &nbsp;
+      
+        <a class="category-tags-link" href="/blogs/categories/#personal">personal</a>
+        &nbsp;
+      
+        <a class="category-tags-link" href="/blogs/categories/#pytest">pytest</a>
+        &nbsp;
+      
+        <a class="category-tags-link" href="/blogs/categories/#docker">docker</a>
+        &nbsp;
+      
+        <a class="category-tags-link" href="/blogs/categories/#golang">golang</a>
+        &nbsp;
+      
+        <a class="category-tags-link" href="/blogs/categories/#vuejs">vuejs</a>
+        
+      
+      </p>
+    
+
+    </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <ul class="section-nav">
+</ul><p>“If you want to move to development, we can look into it” - I was dumbfounded. 😮 The same organization where I had worked for 6 long years - and had asked for this from the very first day - was offering me “development” when I had finally decided to move out. 😦</p>
+
+<p>Hello readers 👋🏼 This is the final blog of this series - my journey from starting as a manual tester to being a software developer today. Well, this is where I had left off in my last post - let’s resume.</p>
+
+<p>The year was 2019 - in the beginning of the year - I had asked for a promotion - because, honestly - I felt that I deserved it. The work we had delivered, the way I had toiled in the last 9-10 months - I did not expect a response - “Not possible this year - we can try in the next”. Strange enough - as soon as I put down my papers - I was offered all - a promotion, a possible onsite as soon as there is a requirement, and even - movement to development. 😐</p>
+
+<p>I still have this question - probably will always have - why is it, when an employee decides to part ways with the organization - are his/her demands fulfilled? A huge hike to match the new offer, or any other thing that was “impossible” just a month back - are all served on a tray. I do not blame my managers or supervisors for this - but company policies like these do not make sense to me. 😕</p>
+
+<p>Anyways, it was not an easy decision - because for joining Aqua, I had to relocate to a different city. I was not sure if I would ever be offered development there. And my leadership in my previous organization was actually leaving no stones unturned - they even spoke to the Data Science Team for my transition (yeah, well I was a little into machine learning back then - trying to understand what the buzz was all about.. Right now - let’s just say that mathematics and I cannot live together happily ever after 😵- so I closed that chapter).</p>
+
+<p>But, somewhere, deep within my heart, I wanted to join Aqua. So, I decided to talk to the research and development (RnD) Head of Aqua India - about my aspirations and what my current organization was offering.</p>
+
+<p>Whoa! Speak directly with the RnD Head? Well, I had my second round of interview with him and from that instant - something had clicked. He is one of the most cheerful, approachable, positive people I have worked with. 🤩 By that time too, I had had a few conversations with him, over mail and call - and every time I felt this wish of working together growing in me. So, I pinged him and in few minutes, he called me back.</p>
+
+<p>Here, let me tell something - when I had this conversation - I did not mention about the promotion or onsite opportunities that I was being offered. Because, honestly - those did not matter to me as much. I told him - “I do not know how to say this, but my current organization is offering me movement to development. And this is what I have always aspired for. I still do want to move to Aqua - but is there any way that I might get to move to development?” And his answer was so honest - <em>I do understand and respect your aspiration. So, yes, we do have internal mobility here in Aqua. But, right now I will not be able to offer you this - because we need a QA member. What I can promise is - I will keep this in mind and make it happen once you are comfortable with your current role, the technology stack and we have a stable QA team.</em></p>
+
+<p>This matters a lot - to be able to bring transparency to the table. I am not a day-dreamer; of-course I knew that I could not join Aqua as a developer - because honestly - I knew nothing of it. And whatever he said - it made absolute sense. So, I took the leap of faith 🕊️ and moved on to Aqua.</p>
+
+<p>The confused state and coming out of it had helped me a lot in this decision. Because I was clear on what I was looking for.</p>
+
+<p>When I started in the new job, it was a very bumpy ride.🚵 Moving to a different city - I realized that the world was so much ahead of where I was earlier. The technology stack, the way of work, it was completely different. Initially, I could not understand anything. 😭 Neither the product, nor docker, orchestrators, or every other thing that was being spoken about.</p>
+
+<p><img src="/blogs/images/k8s_dilbert.jpg" alt="" title="Source credit: reddit"></p>
+
+<p>I believe God has his own way of helping you if you are really trying. In that cacophony, I found a colleague who saw my struggle and decided to pull me out of the mess. From answering my questions to helping me out whenever I was stuck - he has always been my go-to wiki. 🙋 So I put in my everything - I learnt what docker was, how it worked, learnt the product, the new automation framework with Python and Pytest, CI jobs using Jenkins, and much more. And the team stood by me - be it the team in India or Aqua Global - the one thing is - they have got your back. 💝</p>
+
+<p>Even here - it was not a cup of tea to move to development. I had to prove myself worthy and excel in the role of a QA Engineer. I was really slow in the beginning, but by the end of a year - I was confident. Things that I had learnt from my previous organization - main being documentation, analysis, trying to see the complete picture - helped me a lot.</p>
+
+<p>So, slowly - goals were being set for me to prep myself for the next role. I was to learn Golang, VueJs, PostgreSQL. I had also decided to certify in CKA, CKAD<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup> (Kubernetes certifications). It was really a bite more than I could chew - and I felt lost many times. <strong>It is okay to fall - we all do - only that we need to get up.</strong></p>
+
+<p><img src="/blogs/images/golang.jpg" alt="" title="Source credit: twitter.com/turnoff_us/"></p>
+
+<p>I did get up. After almost 1.9 years as a QA Automation engineer in Aqua, I finally transitioned into the role of a Software developer. 🥂 🙌</p>
+
+<p>Well, it was not a complete transition. Initially I had to spend time with the new QA team - with onboarding, query resolutions and much more (Even now, I do that sometimes - the frequency is much less though). And I am still struggling in many places with my new role - because again - a lot to learn in very small time. Yes, I knew what I was up for - and I know I will be there soon. 💗</p>
+
+<p>So, wrapping up this series with - I had a dream 💭 and I saw it bloom into reality. I know all dreams do not come true - but some definitely do. Thank you for being with me though this series. Planning to come up with more technical takeaways from my daily learning in the next blogs.. Hope to see you there… à bientôt.. Okka Bye 👩🏻‍💻👋🏼</p>
+
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1" role="doc-endnote">
+      <p>https://kodekloud.com/cka-vs-ckad-vs-cks-what-is-the-difference/ <a href="#fnref:1" class="reversefootnote" role="doc-backlink">↩</a></p>
+    </li>
+  </ol>
+</div>
+
+  </div><a class="u-url" href="/blogs/testing/development/automation/movement/role-switch/personal/pytest/docker/golang/vuejs/2022/02/22/the-finale.html" hidden></a>
+</article>
+      </div>
+    </main><footer class="site-footer h-card">
+    <data class="u-url" href="/blogs/"></data>
+  
+    <div class="wrapper">
+  
+      <div class="footer-col-wrapper">
+        <div class="footer-col">
+          
+        </div>
+        <div class="footer-col">
+          <p>Some excerpts from my professional life and learnings.</p>
+        </div>
+      </div>
+  
+      <div class="social-links"><ul class="social-media-list"><li><a rel="me" href="https://github.com/Moniseeta" target="_blank" title="Moniseeta"><svg class="svg-icon grey"><use xlink:href="/blogs/assets/minima-social-icons.svg#github"></use></svg></a></li><li><a rel="me" href="https://twitter.com/moniseeta" target="_blank" title="moniseeta"><svg class="svg-icon grey"><use xlink:href="/blogs/assets/minima-social-icons.svg#twitter"></use></svg></a></li></ul>
+</div>
+  
+    </div>
+  
+  </footer></body>
+
+</html>
