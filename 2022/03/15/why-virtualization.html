@@ -1,0 +1,67 @@
+<h1 id="whys-and-hows-of-virtualization">Whys and Hows of virtualization</h1>
+
+<p>Let’s start with an imaginary story:</p>
+
+<p><em>Once upon a time - there was a bank (Gringotts Wizarding Bank maybe). The employees (or Goblins), being the most sincere and hard working - had all their information duly entered into ledgers. Any one having an account with them - had to physically come in and identify themselves, entries being made into the record keeping books and only then accompanied to their lockers. Now Goblins might have magical skills to maintain and search this mammoth of physical ledgers - but the day the dragon unleashed itself and burnt the entire bank down - it was all gone.</em></p>
+
+<p>This might be a story but the problem is very real. Before the advent of computers - we indeed used to have banks with all the data, records and everything being maintained in physical books. With computers - the data started to be virtualized. The data was stored in and fetched from databases. Applications were developed to ease the user experience - and these applications started to be hosted on server systems.</p>
+
+<p>Here came the second twist in the story. Imagine today - we are using an application on our laptops. Now, our laptop can have any combination of:</p>
+
+<ul>
+  <li>processors (intel i3/i5/i7/i9/.., m1) and architectures (amd, arm…)</li>
+  <li>graphic cards (NVDIA, RADEON…)</li>
+  <li>Operating System (windows, macOS, Linux flavours)</li>
+</ul>
+
+<p>This was not very different even earlier. Different companies were bringing different hardware/platforms to the market and the user base was growing diverse by the day. An analysis<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup> states - before virtualization, only 15-30% of server systems were utilized. Why? Because hardware and OS were tightly coupled. Each server machine was a giant, high performance system with a limitation of only one OS. So different OS needs to support different Eco-systems could not be supported by a single server.</p>
+
+<p>Now you may ask, why would the servers have such high resources? They could be built as per the need. There was the problem of scalability. Imagine today you are building an application - and you have a small user base. Tomorrow as you grow, the user base grows exponentially. To support that high load, the system should be equipped - people cannot imagine changing servers every once in a while. So - that was the catch net. Which caused massive under-utilization, high costs and a lot more issues.</p>
+
+<p>Virtualization came to the rescue. What exactly is virtualization? It is a way to make things virtual!! Don’t kill me for this one.. But indeed - it is more like creating anything - from an operating system, an application to an entire server - logical instead of physical.  The same servers could be used as the base hardware and the virtual operating systems could run on the main host operating system.</p>
+
+<p><img src="/blogs/images/movementToVirtualization.png" alt="" title="Source credit: www.ibm.com" /></p>
+
+<p>This opened up an arena of limitless possibilities.<sup id="fnref:3" role="doc-noteref"><a href="#fn:3" class="footnote" rel="footnote">2</a></sup> <sup id="fnref:4" role="doc-noteref"><a href="#fn:4" class="footnote" rel="footnote">3</a></sup></p>
+
+<ul>
+  <li><strong>The costs came down</strong> - fewer hardware servers and related resources could achieve much more computational efficiency. This in place reduced the manual effort needed to maintain the huge number of physical servers, the costs of cooling, carbon footprint and more.</li>
+  <li><strong>There was marked reduction in downtime and disaster recovery was faster</strong> - Again manual effort - if a physical server goes down, it needs to be manually taken care of. If a virtual server goes down - it can be quickly replicated to create a new virtual server while the root cause analysis of the disaster is done in the backend.</li>
+  <li><strong>Scalability</strong> - Anyone could create additional resources as required by many applications, such as by adding extra servers – all on an as-needed basis, without any significant investments in time or money.</li>
+</ul>
+
+<p>Now we get it - yes indeed it was a game changer. But - how does it do this? How does virtualization work?</p>
+
+<p>For that - let’s introduce the concept of hypervisors.<sup id="fnref:2" role="doc-noteref"><a href="#fn:2" class="footnote" rel="footnote">4</a></sup> Hypervisor is a software, like a thin layer that works on top of the host and facilitates virtualization. What it does is - it manages and allocates the physical resources to the Virtual Machines (VMs) , thus enabling multiple operating systems and applications to run in parallel. Even VMs can be moved from one physical server to another real quick.</p>
+
+<p><img src="/blogs/images/Hypervisors.png" alt="" title="Source credit: www.ibm.com" /></p>
+
+<h6 id="types-of-hypervisors">Types of Hypervisors:</h6>
+
+<ul>
+  <li><strong>Type 1 (Bare Metal Hypervisors)</strong> - runs directly on host hardware. Most frequently type used - more secure, reduces latency.</li>
+  <li><strong>Type 2 (Hosted Hypervisors)</strong> - Has layer of host operating system between physical server and hypervisor. Mostly used for end user virtualization. Less frequently used.</li>
+</ul>
+
+<p>We will delve deep into the actual working of hypervisors in a separate blog. That is a vast topic in itself.</p>
+
+<p>So I hope I have been able to make you relate to the concept of virtualization a little more than where you were at the beginning of this blog. In the next post, we will discuss of the advent of cloud..</p>
+
+<p>Hope to see you there.. Okka Bye 👋🏻 👩🏻‍💻</p>
+
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1" role="doc-endnote">
+      <p>https://phoenixnap.com/kb/what-is-server-virtualization <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:3" role="doc-endnote">
+      <p>https://www.ibm.com/cloud/blog/5-benefits-of-virtualization <a href="#fnref:3" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:4" role="doc-endnote">
+      <p>https://www.businessnewsdaily.com/6014-pros-cons-virtualization.html <a href="#fnref:4" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:2" role="doc-endnote">
+      <p>https://developer.ibm.com/articles/cl-hypervisorcompare <a href="#fnref:2" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
